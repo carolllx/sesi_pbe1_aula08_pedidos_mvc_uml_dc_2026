@@ -15,8 +15,35 @@ const listar = (req, res) => {
     subotais()
     res.json(pedidos)
 }
-const alterar = (req, res) => { }
-const excluir = (req, res) => { }
+const alterar = (req, res) => {
+    const id = Number(req.params.id)
+    const indice = pedidos.findIndex(p => p.id === id)
+
+    if (indice === -1) {
+        return res.status(404).json({ mensagem: "Pedido não encontrado" })
+    }
+
+    pedidos[indice] = {
+        ...pedidos[indice],
+        ...req.body,
+        id: id
+    }
+
+    res.json(pedidos[indice])
+}
+
+const excluir = (req, res) => {
+    const id = Number(req.params.id)
+    const indice = pedidos.findIndex(p => p.id === id)
+
+    if (indice === -1) {
+        return res.status(404).json({ mensagem: "Pedido não encontrado" })
+    }
+
+    const pedido = pedidos.splice(indice, 1)
+
+    res.json(pedido[0])
+}
 
 module.exports = {
     criar, listar, alterar, excluir

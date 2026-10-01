@@ -13,5 +13,9 @@ router.get('/clientes', Cliente.listar)
 router.get('/pedidos', Pedido.listar)
 router.post('/clientes', Cliente.criar)
 router.post('/pedidos', Pedido.criar)
+router.put('/clientes/:id', Cliente.alterar)
+router.delete('/clientes/:id', Cliente.excluir)
+router.put('/pedidos/:id', Pedido.alterar)
+router.delete('/pedidos/:id', Pedido.excluir)
 
 module.exports = router

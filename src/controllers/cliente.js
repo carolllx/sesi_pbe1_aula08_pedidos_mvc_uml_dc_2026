@@ -9,8 +9,35 @@ const criar = (req, res) => {
 const listar = (req, res) => {
     res.json(clientes)
 }
-const alterar = (req, res) => { }
-const excluir = (req, res) => { }
+const alterar = (req, res) => {
+    const id = Number(req.params.id)
+    const indice = clientes.findIndex(c => c.id === id)
+
+    if (indice === -1) {
+        return res.status(404).json({ mensagem: "Cliente não encontrado" })
+    }
+
+    clientes[indice] = {
+        ...clientes[indice],
+        ...req.body,
+        id: id
+    }
+
+    res.json(clientes[indice])
+}
+
+const excluir = (req, res) => {
+    const id = Number(req.params.id)
+    const indice = clientes.findIndex(c => c.id === id)
+
+    if (indice === -1) {
+        return res.status(404).json({ mensagem: "Cliente não encontrado" })
+    }
+
+    const cliente = clientes.splice(indice, 1)
+
+    res.json(cliente[0])
+}
 
 module.exports = {
     criar, listar, alterar, excluir
