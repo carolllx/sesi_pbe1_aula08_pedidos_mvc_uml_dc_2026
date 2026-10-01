@@ -25,6 +25,8 @@ npm run dev
 
 ## Testes no Thunder Client
 
+### Atividade 1 — Alterar e excluir clientes e pedidos
+
 ### Alterar cliente
 
 ![Alterar cliente](./put1.png)
