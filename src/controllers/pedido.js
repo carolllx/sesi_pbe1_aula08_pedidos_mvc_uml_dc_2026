@@ -1,20 +1,16 @@
 const pedidos = require("../../dados/pedidos.json")
 
-function subotais() {
-    pedidos.forEach(p => {
-        p.subtotal = p.quantidade * p.preco
-    })
-}
 const criar = (req, res) => {
     const dados = req.body
-    dados.id = Number(pedidos[pedidos.length - 1].id) + 1 //autoIncrement
+    dados.id = Number(pedidos[pedidos.length - 1].id) + 1
     pedidos.push(dados)
     res.status(201).json(dados)
 }
+
 const listar = (req, res) => {
-    subotais()
     res.json(pedidos)
 }
+
 const alterar = (req, res) => {
     const id = Number(req.params.id)
     const indice = pedidos.findIndex(p => p.id === id)
@@ -46,5 +42,8 @@ const excluir = (req, res) => {
 }
 
 module.exports = {
-    criar, listar, alterar, excluir
+    criar,
+    listar,
+    alterar,
+    excluir
 }
