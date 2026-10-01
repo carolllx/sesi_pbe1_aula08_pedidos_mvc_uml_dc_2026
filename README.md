@@ -21,3 +21,17 @@ Back-end com duas coleções mockup JSON clientes e pedidos, CRUD, para aprender
 ```bash
 npm install
 npm run dev
+
+## Testes no Thunder Client
+
+### Alterar cliente
+![Alterar cliente](./prints/put1.png)
+
+### Alterar pedido
+![Alterar pedido](./prints/put2.png)
+
+### Excluir cliente
+![Excluir cliente](./prints/delete1.png)
+
+### Excluir pedido
+![Excluir pedido](./prints/delete2.png)
