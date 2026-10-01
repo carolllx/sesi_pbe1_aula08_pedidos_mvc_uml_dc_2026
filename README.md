@@ -57,3 +57,19 @@ npm run dev
 
 #### Excluir produto
 ![Excluir produto](./delete.png)
+
+
+### Atividade 3 — itens
+
+#### Listar produtos
+![Listar produtos](./get3.png)
+
+#### Cadastrar produto
+![Cadastrar produto](./post3.png)
+
+#### Alterar produto
+![Alterar produto](./put3.png)
+
+#### Excluir produto
+![Excluir produto](./delete3.png)
+
