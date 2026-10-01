@@ -73,3 +73,10 @@ npm run dev
 #### Excluir produto
 ![Excluir produto](./delete3.png)
 
+
+
+## Cálculo do total dos pedidos
+
+### GET - Pedidos com total
+
+![Total dos pedidos](./pedido-total.png)
