@@ -20,7 +20,8 @@ Back-end com duas coleções mockup JSON clientes e pedidos, CRUD, para aprender
 
 ```bash
 npm install
-npm run dev´´´
+npm run dev
+´´´
 
 ## Testes no Thunder Client
 
