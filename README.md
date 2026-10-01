@@ -31,12 +31,12 @@ npm run dev
 
 ### Alterar pedido
 
-![Alterar pedido](./prints/put2.png)
+![Alterar pedido](./put2.png)
 
 ### Excluir cliente
 
-![Excluir cliente](./prints/delete1.png)
+![Excluir cliente](./delete1.png)
 
 ### Excluir pedido
 
-![Excluir pedido](./prints/delete2.png)
+![Excluir pedido](./delete2.png)
