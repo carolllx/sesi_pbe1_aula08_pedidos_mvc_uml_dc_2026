@@ -42,3 +42,18 @@ npm run dev
 ### Excluir pedido
 
 ![Excluir pedido](./delete2.png)
+
+
+### Atividade 2 — CRUD de produtos
+
+#### Listar produtos
+![Listar produtos](./get.png)
+
+#### Cadastrar produto
+![Cadastrar produto](./post.png)
+
+#### Alterar produto
+![Alterar produto](./put.png)
+
+#### Excluir produto
+![Excluir produto](./delete.png)
