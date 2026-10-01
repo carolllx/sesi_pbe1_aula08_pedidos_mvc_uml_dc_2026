@@ -27,7 +27,7 @@ npm run dev
 
 ### Alterar cliente
 
-![Alterar cliente](./prints/put1.png)
+![Alterar cliente](./put1.png)
 
 ### Alterar pedido
 
