@@ -79,4 +79,4 @@ npm run dev
 
 ### GET - Pedidos com total
 
-![Total dos pedidos](./pedido-total.png)
+![Total dos pedidos](./pedido_total.png)
